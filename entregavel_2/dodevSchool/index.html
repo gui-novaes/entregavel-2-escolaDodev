@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>aluno Avançado</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+  <div class="aluno-container">
+    <header>
+      <h1>Alunos DoDev</h1>
+    </header>
+    <form id="aluno-form">
+      <p>Cadastre um Aluno</p>
+      <div class="form-control">
+        <input type="text" id="aluno-input" placeholder="Nome" />
+        <input type="text" id="aluno-input-2" placeholder="Idade" />
+        <input type="text" id="aluno-input-3" placeholder="Nota" />
+        <button type="submit">
+          <i class="fa-thin fa-plus"></i>
+        </button>
+      </div>
+    </form>
+    <form id="edit-form" class="hide">
+      <p>Edite sua tarefa</p>
+      <div class="form-control">
+        <input type="text" id="edit-input" />
+        <button type="submit">
+          <i class="fa-solid fa-check-double"></i>
+        </button>
+      </div>
+      <button id="cancel-edit-btn">Cancelar</button>
+    </form>
+    <div id="toolbar">
+      <div id="search">
+        <h4>Pesquisar:</h4>
+        <form>
+          <input type="text" id="search-input" placeholder="Buscar..." />
+          <button id="erase-button">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+        </form>
+      </div>
+      <div id="filter">
+        <h4>Ordenar:</h4>
+        <select id="filter-select">
+          <option value="nota">Por nota</option>
+          <option value="idade">Pela idade</option>
+          <option value="nome">Pelo nome</option>
+        </select>
+      </div>
+    </div>
+    <div class="aluno-list-header">
+      <h4>Nome</h4>
+      <h4>Idade</h4>
+      <h4>Nota</h4>
+    </div>
+    <div id="aluno-list">
+       <!-- 
+          Template
+          
+          <div class="aluno">
+          <h3>Nome</h3>
+          <h3>Idade</h3>
+          <h3>Nota</h3>
+          <button class="finish-aluno">
+            <i class="fa-solid fa-check"></i>
+          </button>
+          <button class="edit-aluno">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+          <button class="remove-aluno">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div> -->
+    </div>
+    <div class="media-list">
+      <h4>Média:</h4>
+      <h4 id="media">0</h4>
+    </div>
+  </div>
+</body>
+
+</html>
